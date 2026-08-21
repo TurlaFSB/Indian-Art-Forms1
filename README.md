@@ -1,9 +1,7 @@
-# Indian Art Through Time — Final Project
+# Indian Art Through Time
 
-Student: Pranav Verma
-Registration Number: RA2411030010008
-Department: NWC
-Assignment: Interactive Timeline with Artifacts (10 Marks) — CO1
+
+ Interactive Timeline with Artifacts 
 
 ## Files
 
