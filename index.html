@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <title>Indian Art Through Time — Digital Museum Exhibition</title>
+  <meta name="description" content="An interactive digital museum exhibition exploring five millennia of Indian sculpture, painting, and architecture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="museum-header" id="main-header">
+    <div class="logo">
+      <span class="logo-title">INDIAN ART</span>
+      <span class="logo-sub">THROUGH TIME</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#intro">Exhibition</a>
+      <a href="#map-section">Geography</a>
+      <a href="#materials-section">Materials & Techniques</a>
+      <a href="#timeline-nav">Timeline</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="intro">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="curator-badge">A DIGITAL MUSEUM EXHIBITION</div>
+        <h1 class="hero-title">Indian Art<br><em>Through Time</em></h1>
+        <p class="hero-sub">Five millennia of sacred sculpture, dynamic bronzes, luminous miniatures, and monumental temple architecture.</p>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-num">5,000+</span><span class="stat-lbl">Years of History</span></div>
+          <div class="stat-item"><span class="stat-num">10</span><span class="stat-lbl">Historical Eras</span></div>
+          <div class="stat-item"><span class="stat-num">21</span><span class="stat-lbl">Masterpiece Artifacts</span></div>
+        </div>
+        <a href="#period-harappan" class="scroll-cta">
+          <span>BEGIN TOUR</span>
+          <div class="cta-arrow">↓</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- TIMELINE JUMP BAR -->
+    <nav class="timeline-bar" id="timeline-nav">
+      <div class="timeline-scroll">
+        
+          <a href="#period-harappan" class="timeline-chip">
+            <span class="chip-num">01</span>
+            <span class="chip-title">Indus</span>
+          </a>
+        
+          <a href="#period-mauryan" class="timeline-chip">
+            <span class="chip-num">02</span>
+            <span class="chip-title">Mauryan</span>
+          </a>
+        
+          <a href="#period-gandhara-mathura" class="timeline-chip">
+            <span class="chip-num">03</span>
+            <span class="chip-title">Gandhara</span>
+          </a>
+        
+          <a href="#period-gupta" class="timeline-chip">
+            <span class="chip-num">04</span>
+            <span class="chip-title">The</span>
+          </a>
+        
+          <a href="#period-chola" class="timeline-chip">
+            <span class="chip-num">05</span>
+            <span class="chip-title">Chola</span>
+          </a>
+        
+          <a href="#period-khajuraho" class="timeline-chip">
+            <span class="chip-num">06</span>
+            <span class="chip-title">Khajuraho</span>
+          </a>
+        
+          <a href="#period-mughal" class="timeline-chip">
+            <span class="chip-num">07</span>
+            <span class="chip-title">Mughal</span>
+          </a>
+        
+          <a href="#period-regional-miniatures" class="timeline-chip">
+            <span class="chip-num">08</span>
+            <span class="chip-title">Rajput</span>
+          </a>
+        
+          <a href="#period-ravi-varma" class="timeline-chip">
+            <span class="chip-num">09</span>
+            <span class="chip-title">Raja</span>
+          </a>
+        
+          <a href="#period-bengal-school" class="timeline-chip">
+            <span class="chip-num">10</span>
+            <span class="chip-title">Bengal</span>
+          </a>
+        
+      </div>
+    </nav>
+
+    <!-- EXHIBITION PERIODS CONTAINER -->
+    <div id="exhibition-container"></div>
+
+    <!-- GEOGRAPHY SECTION (Interactive Constellation Map) -->
+    <section class="map-section" id="map-section">
+      <div class="map-layout-grid">
+        <div class="map-content-col">
+          <span class="eyebrow">SACRED GEOGRAPHY</span>
+          <h2>The Artistic Landscape</h2>
+          <p>Indian art developed through interconnected regional networks rather than a single imperial center. Trade routes, river valleys, and pilgrimage corridors facilitated continuous artistic exchange across the subcontinent.</p>
+          
+          <div class="regional-pills">
+            <button class="reg-pill" onclick="document.getElementById('period-harappan').scrollIntoView({behavior:'smooth'})">
+              <span class="pill-dot"></span>
+              <strong>Indus Valley</strong>
+              <small>c. 2500 BCE • Mohenjo-daro</small>
+            </button>
+            <button class="reg-pill" onclick="document.getElementById('period-gandhara-mathura').scrollIntoView({behavior:'smooth'})">
+              <span class="pill-dot"></span>
+              <strong>Mathura & Gandhara</strong>
+              <small>c. 2nd C. CE • Kushan Centers</small>
+            </button>
+            <button class="reg-pill" onclick="document.getElementById('period-gupta').scrollIntoView({behavior:'smooth'})">
+              <span class="pill-dot"></span>
+              <strong>Sarnath & Deogarh</strong>
+              <small>c. 5th C. CE • Gupta Classical</small>
+            </button>
+            <button class="reg-pill" onclick="document.getElementById('period-khajuraho').scrollIntoView({behavior:'smooth'})">
+              <span class="pill-dot"></span>
+              <strong>Khajuraho</strong>
+              <small>c. 10th C. CE • Nagara Temples</small>
+            </button>
+            <button class="reg-pill" onclick="document.getElementById('period-chola').scrollIntoView({behavior:'smooth'})">
+              <span class="pill-dot"></span>
+              <strong>Thanjavur (Chola)</strong>
+              <small>c. 11th C. CE • Kaveri Delta</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="map-visual-col">
+          <div class="map-svg-container">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="constellation-svg">
+              <path d="M22,28 L42,38 L65,44 L50,56 L42,82" fill="none" stroke="rgba(212, 175, 55, 0.4)" stroke-width="0.75" stroke-dasharray="2,2" />
+              <path d="M42,38 L50,56" fill="none" stroke="rgba(212, 175, 55, 0.25)" stroke-width="0.5" stroke-dasharray="1.5,1.5" />
+            </svg>
+            <div id="map-markers">
+              <div class="map-marker" style="top:28%; left:22%;" onclick="document.getElementById('period-harappan').scrollIntoView({behavior:'smooth'})" title="Click to visit Indus Valley">
+                <div class="marker-pulse"></div>
+                <div class="marker-dot"></div>
+                <div class="marker-label">Indus Valley</div>
+              </div>
+              <div class="map-marker" style="top:38%; left:42%;" onclick="document.getElementById('period-gandhara-mathura').scrollIntoView({behavior:'smooth'})" title="Click to visit Mathura">
+                <div class="marker-pulse"></div>
+                <div class="marker-dot"></div>
+                <div class="marker-label">Mathura</div>
+              </div>
+              <div class="map-marker" style="top:44%; left:65%;" onclick="document.getElementById('period-gupta').scrollIntoView({behavior:'smooth'})" title="Click to visit Sarnath">
+                <div class="marker-pulse"></div>
+                <div class="marker-dot"></div>
+                <div class="marker-label">Sarnath (Gupta)</div>
+              </div>
+              <div class="map-marker" style="top:56%; left:50%;" onclick="document.getElementById('period-khajuraho').scrollIntoView({behavior:'smooth'})" title="Click to visit Khajuraho">
+                <div class="marker-pulse"></div>
+                <div class="marker-dot"></div>
+                <div class="marker-label">Khajuraho</div>
+              </div>
+              <div class="map-marker" style="top:82%; left:42%;" onclick="document.getElementById('period-chola').scrollIntoView({behavior:'smooth'})" title="Click to visit Thanjavur">
+                <div class="marker-pulse"></div>
+                <div class="marker-dot"></div>
+                <div class="marker-label">Thanjavur (Chola)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIALS & TECHNIQUES SECTION (Grand, Spacious Cards) -->
+    <section class="materials-section" id="materials-section">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="eyebrow">MATERIALS & CRAFT MASTERY</span>
+          <h2>The Medium Shapes the Art</h2>
+          <p>Explore how ancient physical materials, sacred metallurgy, and mineral pigments dictated sculptural and pictorial expression across five millennia.</p>
+        </div>
+
+        <div class="materials-showcase-grid">
+          
+          <!-- Card 1: Stone Carving -->
+          <div class="material-showcase-card" onclick="openMaterialDetail(0)">
+            <div class="mat-image-holder">
+              <img src="./images/mathura_buddha.jpg" alt="Stone Carving">
+              <div class="mat-tag">STONE & MONOLITH</div>
+            </div>
+            <div class="mat-card-body">
+              <h3>Stone Carving</h3>
+              <p class="mat-summary">From polished Mauryan sandstone to intricate Khajuraho details and soaring granite vimanas.</p>
+              <ul class="mat-features">
+                <li>Mirror-sheen Mauryan polishing on Chunar sandstone</li>
+                <li>Red spotted Sikri sandstone full-prana modeling</li>
+                <li>Monolithic interlocking granite joinery without mortar</li>
+              </ul>
+              <button class="btn-inspect-mat">EXPLORE TECHNIQUE ↗</button>
+            </div>
+          </div>
+
+          <!-- Card 2: Bronze Casting -->
+          <div class="material-showcase-card" onclick="openMaterialDetail(1)">
+            <div class="mat-image-holder">
+              <img src="./images/chola_nataraja.jpg" alt="Bronze Casting">
+              <div class="mat-tag">SACRED METALLURGY</div>
+            </div>
+            <div class="mat-card-body">
+              <h3>Bronze Casting</h3>
+              <p class="mat-summary">The lost-wax (cire perdue) method utilized to perfection by Chola master artisans in Tamil Nadu.</p>
+              <ul class="mat-features">
+                <li>Hand-carved beeswax core with clay outer mould</li>
+                <li>Panchaloha (sacred 5-metal copper alloy)</li>
+                <li>Intricate hand-chiseled cold-work detail finishing</li>
+              </ul>
+              <button class="btn-inspect-mat">EXPLORE TECHNIQUE ↗</button>
+            </div>
+          </div>
+
+          <!-- Card 3: Opaque Pigment -->
+          <div class="material-showcase-card" onclick="openMaterialDetail(2)">
+            <div class="mat-image-holder">
+              <img src="./images/mughal_shahjahan.jpg" alt="Miniature Painting">
+              <div class="mat-tag">MINERAL & GOLD</div>
+            </div>
+            <div class="mat-card-body">
+              <h3>Opaque Pigment</h3>
+              <p class="mat-summary">Mughal and Rajput miniatures demanding exquisite single-hair brushwork on burnished wasli paper.</p>
+              <ul class="mat-features">
+                <li>Genuine lapis lazuli, malachite, and cinnabar minerals</li>
+                <li>24-karat gold leaf illumination & agate burnishing</li>
+                <li>Micro-stippling (pardaz) with single-hair squirrel brushes</li>
+              </ul>
+              <button class="btn-inspect-mat">EXPLORE TECHNIQUE ↗</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="museum-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h2>INDIAN ART THROUGH TIME</h2>
+          <p>A Digital Museum Experience celebrating South Asian visual heritage.</p>
+        </div>
+        <div class="footer-meta">
+          <p>Curated and developed by <strong>Pranav Verma</strong> (RA2411030010008) • NWC</p>
+          <p class="footer-sub">All artworks sourced from National Museum New Delhi, Sarnath Museum, Metropolitan Museum of Art, and Bihar Museum.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ARTIFACT INSPECTOR MODAL -->
+  <div class="artifact-modal" id="artifact-modal" aria-hidden="true" role="dialog">
+    <div class="modal-bg" onclick="closeModal()"></div>
+    <button class="modal-close" id="modal-close" onclick="closeModal()" aria-label="Close modal">×</button>
+    <div class="modal-container">
+      <div class="modal-image-col">
+        <div class="modal-image-wrapper">
+          <img id="modal-image" src="" alt="Artifact high resolution view">
+        </div>
+      </div>
+      <div class="modal-text-col">
+        <span class="label-accession" id="modal-badge">EXHIBITION MASTERPIECE</span>
+        <h2 id="modal-title">Artifact Title</h2>
+        <div class="modal-meta" id="modal-meta">Date | Medium | Location</div>
+        <div class="modal-separator"></div>
+        <div class="modal-body" id="modal-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

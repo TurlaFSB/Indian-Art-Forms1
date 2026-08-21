@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#efe4d2"/>
+<rect x="46" y="46" width="1108" height="808" rx="4" fill="none" stroke="#c94b32" stroke-opacity=".35"/>
+<path d="M170 720 C300 590 430 610 530 470 C650 300 790 400 900 260" fill="none" stroke="#c94b32" stroke-width="2" opacity=".55"/>
+<circle cx="890" cy="250" r="78" fill="none" stroke="#c69b52" stroke-width="2" opacity=".7"/>
+<text x="90" y="130" font-family="Arial, sans-serif" font-size="22" letter-spacing="4" fill="#7b6f63">BENGAL SCHOOL</text>
+<text x="90" y="710" font-family="Georgia, serif" font-size="54" fill="#2a2622">Bharat Mata</text>
+<text x="90" y="755" font-family="Arial, sans-serif" font-size="20" letter-spacing="3" fill="#7b6f63">1905</text>
+<text x="1110" y="810" text-anchor="end" font-family="Arial, sans-serif" font-size="14" letter-spacing="2" fill="#c94b32">ARCHIVAL FALLBACK</text>
+</svg>
